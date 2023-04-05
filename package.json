@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "npx yarn storybook",
-    "build": "node ./scripts/build",
+    "build": "lerna run build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "tsc": "tsc --noEmit",
@@ -24,6 +24,7 @@
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.18.6",
+    "@deuscx/eslint-config": "^0.0.8",
     "@storybook/addon-actions": "^6.5.15",
     "@storybook/addon-essentials": "^6.5.15",
     "@storybook/addon-interactions": "^6.5.15",
@@ -35,18 +36,10 @@
     "@types/jest": "^29.2.5",
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@typescript-eslint/parser": "^5.48.0",
+    "@vitejs/plugin-react": "^3.1.0",
     "babel-jest": "^29.3.1",
     "babel-loader": "^9.1.0",
     "eslint": "^8.31.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^27.1.7",
-    "eslint-plugin-jsonc": "^2.6.0",
-    "eslint-plugin-jsx-a11y": "^6.6.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.31.11",
-    "eslint-plugin-react-hooks": "^4.6.0",
     "express": "^4.17.3",
     "father-build": "^1.21.2",
     "identity-obj-proxy": "^3.0.0",
@@ -57,8 +50,8 @@
     "lerna": "^4.0.0",
     "lint-staged": "^13.1.0",
     "mongodb": "^4.5.0",
-    "prettier": "^2.5.1",
     "tsconfig-paths-webpack-plugin": "^4.0.0",
+    "vite": "^4.2.1",
     "ws": "^8.11.0",
     "yorkie": "^2.0.0"
   },
@@ -66,9 +59,6 @@
     "react": ">= 18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^4.9.4"
-  },
-  "gitHooks": {
-    "pre-commit": "npx yarn lint"
   },
   "resolutions": {
     "react": "^18.2.0",

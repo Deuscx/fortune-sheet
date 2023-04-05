@@ -10,7 +10,8 @@
   "repository": "https://github.com/ruilisi/fortune-sheet",
   "license": "MIT",
   "scripts": {
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "build": "father-build"
   },
   "dependencies": {
     "@fortune-sheet/core": "^0.14.0",
